@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "aws-iac-tf-19159
+    bucket         = "aws-iac-tf-19159"  # Added missing closing quotation mark
     key            = "terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
