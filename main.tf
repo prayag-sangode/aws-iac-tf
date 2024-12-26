@@ -4,11 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-<<<<<<< HEAD
-    bucket         = "aws-iac-tf-19159"
-=======
     bucket         = "aws-iac-tf-19159"  # Added missing closing quotation mark
->>>>>>> b8d5a7a6ff140d66939658b1136e7a7668dc383b
     key            = "terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
