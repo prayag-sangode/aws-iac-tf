@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "aws-iac-tf-19159"  # Added missing closing quotation mark
+    bucket         = "aws-iac-tf-1915912"  
     key            = "terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
@@ -14,7 +14,7 @@ terraform {
 
 # Create an EC2 instance
 resource "aws_instance" "example" {
-  ami           = "ami-0c94855ba95c71c99"  # Replace with your desired AMI ID
+  ami           = "ami-0c94855ba95c71c99" 
   instance_type = "t2.micro"
 }
 
